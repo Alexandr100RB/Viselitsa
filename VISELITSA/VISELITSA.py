@@ -53,8 +53,7 @@ words = '''аист акула бабуин баран барсук бобр б�
 
 # print(words)
 def getRandomWord(wordList):
-    wordIndex = random.randint(0, len(wordList) - 1)
-    return wordList[wordIndex]
+    return random.choice(wordList)
 
 
 def displayBoard(missedLetters, correctLaters, secretWord):
